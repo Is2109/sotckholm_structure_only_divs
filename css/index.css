@@ -1,0 +1,478 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing:border-box;
+}
+li{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    display: block;
+}
+p a {
+    display: inline;
+}
+img , svg{
+    display: block;
+    width: 100%;
+    height: initial;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a{
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color:inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+:root{
+    font-size: 100%;
+}
+body{
+    font-family: "Mulish", sans-serif;
+}
+
+.Header{
+    width: 100%;
+    min-height: 10vh;
+    padding: 2.5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header-hamburger{
+    display: none;
+}
+.Header-logo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Header-nav{
+    gap: 3.125rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    color: #252525;
+    font-size: .75rem;
+    letter-spacing: .0625rem;
+    font-weight: 700;
+}
+.Header-social{
+    gap: 1.5625rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* -------------------------- */
+
+.Main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Main-striving{
+    width: 100%;
+    padding: 6.25rem 0rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Main-strivingTitle{
+    color: #252525;
+    font-size: 3.125rem;
+    text-align: center;
+
+    margin-bottom: .9375rem;
+}
+.Main-strivingText{
+    font-size: 1.0625rem;
+    color: #4F4F4F;
+    text-align: center;
+
+    margin-bottom: 1.875rem;
+}
+.Main-strivingListen{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: .625rem;
+}
+.Main-strivingGo{
+    font-size: .8125rem;
+    color: #252525;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.Main-homeImage{
+    width: 100%;
+}
+
+
+.Main-description{
+    width: 100%;
+    padding: 6.25rem 0;
+    gap: 1.25rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Main-descriptionText{
+    width: 55%;
+
+    font-size: 1.3125rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #4E4E4E;
+    font-weight: 300;
+}
+
+
+.Main-latestEpisodes{
+    width: 100%;
+    gap: 3.75rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Main-latest{
+    width: 50%;
+    gap: .625rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Main-latestNewShows{
+    font-size: .75rem;
+    letter-spacing: .1688rem;
+    color: #252525;
+    text-transform: uppercase;
+}
+.Main-latestTitle{
+    font-size: 2.875rem;
+    color: #252525;
+    text-align: center;
+}
+.Main-line{
+    width: 85%;
+    min-height: 1px;
+    background-color: #DEDEDE;
+}
+.Main-episode{
+    width: 85%;
+    gap: 3.125rem;
+    padding: 1.25rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Main-episodeImg{
+    width: 15.625rem;
+    min-height: 15.625rem;
+}
+.Main-episodeInfo{
+    width: 50%;
+    gap: 1.25rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Main-episodeDate{
+    font-size: .75rem;
+    letter-spacing: .1688rem;
+    color: #252525;
+    text-transform: uppercase;
+}
+.Main-episodeTitle{
+    font-size: 1.625rem;
+    color: #252525;
+}
+.Main-episodeDescription{
+    font-size: 1.0625rem;
+    color: #4F4F4F;
+    font-weight: 300;
+}
+.Main-episodeListen{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: .625rem;
+    padding: 1.25rem 0;
+}
+.Main-episodeGo{
+    font-size: .8125rem;
+    color: #252525;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.Main-sally{
+    width: 100%;
+    gap: 3.125rem;
+    padding-top: 9.375rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Main-sallyAbout{
+    width: 50%;
+    gap: 1.25rem;
+    margin-bottom: 1.875rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Main-sallyAboutMe{
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .1688rem;
+    color: #252525;
+}
+.Main-sallyAboutSally{
+    font-size: 2.875rem;
+    color: #252525;
+    text-align: center;
+}
+.Main-sallyDescription{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.0625rem;
+    color: #4F4F4F;
+    line-height: 1.8125rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.Main-sallyReadMore{
+    font-size: .8125rem;
+    color: #252525;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: .625rem;
+    font-weight: 700;
+}
+.Main-sallyImage{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 5rem;
+}
+.Main-sallyImageImg{
+    width: 85%;
+}
+
+/* -------------------------- */
+
+.Footer{
+    width: 85%;
+    padding: 8.125rem 0rem;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Footer-logo{
+    gap: .9375rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Footer-logoImg{
+    width: 9.375rem;
+}
+.Footer-logoCopyright{
+    font-size: 1rem;
+    color: #4F4F4F;
+    font-weight: 300;
+}
+.Footer-form{
+    width: 18.75rem;
+    gap: 5px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Footer-formEmail{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Footer-formEmailText{
+    font-size: .875rem;
+    font-weight: 300;
+}
+.Footer-formLine{
+    background-color: #DEDEDE;
+    width: 100%;
+    min-height: 1px;
+    
+}
+.Footer-formEmailSend{
+    width: 1rem;
+    min-height: 1rem;
+}
+.Footer-social{
+    gap: 1.5625rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* -------------------------- */
+
+@media (max-width: 1200px){
+    .Main-striving{
+        width: 60%;
+    }
+}
+
+@media (max-width: 1000px){
+    .Header{
+        position: relative;
+    }
+    .Header-nav{
+        display: none;
+    }
+    .Header-hamburger{
+        display: flex;
+        order: 1;
+    }
+    .Header-logo{
+        order: 2;
+        position: absolute;
+        left: calc(50% - (134px / 2));
+    }
+    .Header-social{
+        order: 3;
+    }
+    .Main-striving{
+        width: 40%;
+    }
+}
+
+@media (max-width: 980px){
+    .Main-striving{
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 780px){
+    .Header-social{
+        display: none;
+    }
+    .Main-strivingTitle{
+        font-size: 1.875rem;
+    }
+    .Main-striving{
+        width: 55%;
+    }
+    .Footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        gap: 3.125rem;
+    }
+    .Footer-form{
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px){
+    .Main-strivingTitle{
+        font-size: 3.125rem;
+    }
+    .Main-striving{
+        width: 70%;
+    }
+    .Main-episodeImg{
+        width: 9.375rem;
+        min-height: 9.375rem;
+    }
+}
+
+@media (max-width: 480px){
+    .Main-latestEpisodes{
+    width: 100%;
+    gap: 3.75rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+    .Main-episode{
+        flex-direction: column;
+
+        width: 70%;
+        padding: 0;
+        gap: .625rem;
+    }
+    .Main-episodeImg{
+        width: 100%;
+    }
+    .Main-episodeInfo{
+        width: 100%;
+    }
+    .Main-episodeListen{
+        padding: 0;
+    }
+    .Main-line{
+        width: 70%;
+    }
+    .Main-sallyImageImg{
+        width: 70%;
+    }
+}
